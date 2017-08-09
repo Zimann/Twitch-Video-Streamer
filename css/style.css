@@ -1,0 +1,244 @@
+body,
+html {
+    box-sizing: border-box;
+    background-color: #2980b9;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+a:visited {
+    color: blue;
+}
+h1 {
+    margin: 0;
+}
+.full-width-bar {
+    background-color: #27ae60;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    margin-top: -56px;
+    visibility: hidden;
+}
+.fa-bars,
+.fa-times {
+    margin: 7px;
+    cursor: pointer;
+}
+.fa-bars:before {
+    font-size: 22px;
+    color: #fff;
+}
+.fa-times:before {
+    font-size: 22px;
+    color: #fff;
+}
+.off-canvas-element {
+    width: 320px;
+    position: fixed;
+    height: 100%;
+    background-color: #27ae60;
+    z-index: 999;
+    margin-top: -16px;
+    margin-left: -320px;
+    transition: 0.3s ease-in;
+}
+.off-canvas-bringer {
+    margin-left: 0;
+}
+.title-wrapper {
+    height: 100px;
+    width: 60%;
+    margin: auto;
+    margin-top: 56px;
+    background-color: #7f8c8d;
+    padding-bottom: 3%;
+}
+.title {
+    width: 85%;
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+}
+.title h1 {
+    margin-top: 40px;
+}
+.option {
+    font-size: 11px;
+    background-color: beige;
+    text-align: right;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #000;
+    height: 15px;
+    width: 100%;
+    transition: 1s, ease-in;
+    margin-left: 80%;
+    width: 20%;
+}
+.size-changer {
+    margin-left: 40%;
+    width: 60%;
+}
+.online-option-all {
+    margin-top: 15px;
+    width: 60%;
+    margin-left: 40%;
+}
+.online-option-all .option-text {
+    visibility: visible;
+}
+.option-wrapper {
+    left: 70.5%;
+    width: 9.5%;
+    position: absolute;
+}
+.option-text {
+    padding-right: 5px;
+    visibility: hidden;
+    font-weight: bold;
+    color: #444c4d;
+}
+.option-text-all {
+    visibility: visible;
+}
+.aside-wrapper {
+    margin-top: 50px;
+    text-align: center;
+}
+.aside-option-1,
+.aside-option-2,
+.aside-option-3 {
+    background-color: #27ae60;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #fff;
+}
+.aside-option-1:hover {
+    background-color: #7f8c8d;
+    color: #fff;
+}
+.aside-option-2:hover {
+    background-color: #2ecc71;
+    color: #fff;
+}
+.aside-option-3:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+.aside-option-1 {
+    margin-top: 50px;
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid #fff;
+}
+.show-text {
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+/*-----general purpose class to use for hiding elements----*/
+
+.hide-element {
+    display: none !important;
+}
+.grey-circle,
+.green-circle,
+.red-circle {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #7f8c8d;
+    left: 1%;
+    float: left;
+    left: 74.7%;
+    margin-top: 2px;
+    margin-left: 5%;
+}
+.green-circle {
+    background-color: #2ecc71;
+}
+.red-circle {
+    background-color: #e74c3c;
+}
+.channels {
+    width: 60%;
+    margin: auto;
+    background-color: #7f8c8d;
+}
+.channel {
+    width: 97.6%;
+    padding-left: 2.3%;
+    display: inline-flex;
+    border-bottom: 1px solid white;
+}
+.channel-description {
+    font-weight: bold;
+    margin: auto;
+    color: white;
+    font-size: 17px;
+}
+.profile-pic {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.user-title {
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+hr {
+    margin-top: 20px;
+    width: 99.6%;
+    margin: 0;
+}
+.online-class {
+    background-color: #2ecc71;
+}
+.offline-class {
+    background-color: #e74c3c;
+}
+/*----Media queries--- */
+
+@media screen and (max-width: 1024px) {
+    .channel-description {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1156px) {
+    .option-wrapper {
+        display: none;
+    }
+    .full-width-bar {
+        visibility: visible;
+    }
+}
+@media screen and (max-width: 800px) {
+    .channel-description {
+        display: none;
+    }
+    .profile-pic {
+        margin-left: 32%;
+    }
+}
+@media screen and (max-width: 434px) {
+    h1 {
+        font-size: 27px;
+    }
+    .profile-pic {
+        margin-left: 0;
+    }
+}
