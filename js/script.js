@@ -75,7 +75,9 @@ $(window).load(function() {
                         }
                     });
                 }
-            }
+            },
+        }).fail(function(){
+            alert('The data could not be fetched, please refresh the page');
         });
     }
 
